@@ -10,29 +10,35 @@
 </head>
 <body>
     <header>
-        <h1>Liste des CPUs</h1>
-        <img src="img/cpuz.webp">
+        <div>
+            <h1>Liste des CPUs</h1>
+            <img src="img/cpuz.webp">
+        </div>
         <fieldset>
-            <legend>Rechercher un modèle</legend>
-            <input type="search">
+            <label for="search">Rechercher un modèle</label>
+            <input type="search" id="search">
         </fieldset>
     </header>
     <main>
         <table>
             <thead>
             <tr>
-                <th>Identifiant</th>
-                <th>Marque</th>
-                <th>Famille</th>
-                <th>Modèle</th>
-                <th>Fréquence (Ghz)</th>
-                <th>Nom complet</th>
+                <th scope="coll">Identifiant</th>
+                <th scope="coll">Marque</th>
+                <th scope="coll">Famille</th>
+                <th scope="coll">Modèle</th>
+                <th scope="coll">Fréquence <abbr aria-hidden="true" title="GigaHertz">(GHz)</abbr> <span class="sr-only">en GigaHertz</span></th>
+                <th id="price" scope="coll">Prix (en €) <span class="sr-only">Cliquer sur l'entête pour trier par prix</span></th>
+                <th id="fullName" scope="coll">Nom complet</th>
             </tr>
             </thead>
+            <tbody id="tbody">
+
+            </tbody>
         </table>
     </main>
     <footer>
-        <p>Nombre de modèles : <span>0</span></p>
+        <p>Nombre de modèles : <span id="counter">0</span></p>
     </footer>
 </body>
 </html>

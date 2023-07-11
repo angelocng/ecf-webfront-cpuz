@@ -23,3 +23,53 @@ body {
 body > header {
     margin-bottom: 2rem;
 }
+
+header > div{
+    display:flex;
+    justify-content: center;
+}
+
+header > div > h1{
+    padding-top:8%;
+    margin-right: 50%;
+}
+
+header > fieldset{
+    margin: 0 31%;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border:1px solid var(--secondary-text)
+}
+
+th{
+    padding:10px;
+    border: 1px solid var(--secondary-text);
+}
+
+tbody > tr:hover{
+    background-color: var(--hover-color);
+}
+
+td{
+    padding:5px;
+}
+
+footer{
+    margin : 100px 45%;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+			clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
